@@ -42,10 +42,10 @@ export default function App() {
             embark on a jorney of limitatless exploration with Aora
           </Text>
 
-          <CustomButton 
+          <CustomButton
             title="Continue with Email"
-            handlePress={() => router.push('/sign-in') }
-            containerStyles="w-full mt-7" textStyles={undefined} isLoading={undefined}          />
+            handlePress={() => router.push('/sign-in')}
+            containerStyles="w-full mt-7" textStyles={undefined} isLoading={undefined} />
         </View>
       </ScrollView>
 
