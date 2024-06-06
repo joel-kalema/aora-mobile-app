@@ -1,10 +1,12 @@
 import { Image, StyleSheet, Platform, View, Text } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
-import { Link } from 'expo-router';
+import { Redirect, router } from 'expo-router';
 import tw from 'twrnc';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { ScrollView } from 'react-native-gesture-handler';
 import { images } from '@/constants';
+
+import CustomButton from "@/components/CustomButton"
 
 export default function App() {
   return (
@@ -40,8 +42,14 @@ export default function App() {
             embark on a jorney of limitatless exploration with Aora
           </Text>
 
+          <CustomButton 
+            title="Continue with Email"
+            handlePress={() => router.push('/sign-in') }
+            containerStyles="w-full mt-7" textStyles={undefined} isLoading={undefined}          />
         </View>
       </ScrollView>
+
+      <StatusBar backgroundColor='#161622' style='light' />
     </SafeAreaView>
   );
 }
