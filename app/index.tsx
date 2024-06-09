@@ -1,9 +1,8 @@
-import { Image, StyleSheet, Platform, View, Text } from 'react-native';
+import { Image, ScrollView, View, Text } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import { Redirect, router } from 'expo-router';
 import tw from 'twrnc';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { ScrollView } from 'react-native-gesture-handler';
 import { images } from '@/constants';
 
 import CustomButton from "@/components/CustomButton"
